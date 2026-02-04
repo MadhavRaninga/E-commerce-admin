@@ -77,7 +77,7 @@ const Layout = ({ children }) => {
         </div>
 
         <div className="muted" style={{ marginTop: 14, fontSize: 12 }}>
-          Backend: `http://localhost:5000`
+          
         </div>
       </aside>
 
