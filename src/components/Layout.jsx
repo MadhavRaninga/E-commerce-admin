@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
   const logout = () => {
     saveAdmin(null);
     toast.success("Logged out");
-    navigate("/login");
+    navigate("/");
   };
 
   return (
@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
 
         <nav className="grid" style={{ gap: 8 }}>
           <NavLink
-            to="/"
+            to="/dashboard"
             end
             className={({ isActive }) =>
               `navlink ${isActive ? "active" : ""}`
