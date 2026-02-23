@@ -17,7 +17,7 @@ const Login = () => {
       const { data } = await api.post("/api/admin/login", { email, password });
       saveAdmin(data.user);
       toast.success(data.message || "Logged in");
-      navigate("/");
+      navigate("/dashboard");
     } catch (err) {
       toast.error(err?.response?.data?.message || "Login failed");
     } finally {
